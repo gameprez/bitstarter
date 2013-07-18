@@ -6,24 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="http://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
 
     <style type="text/css">
 
-     @media (min-width: 980px) {
-      body {
-        padding-top: 60px ;
-      } 
-      .linediv-l {
-        border-right: 1px white solid;
+      @media (min-width: 980px) {
+        body {
+          padding-top: 60px ;
+        } 
+        .linediv-l {
+          border-right: 1px white solid;
+        }
+        .linediv-r {
+          border-left: 1px white solid;
+        }
       }
-      .linediv-r {
-        border-left: 1px white solid;
-      }
-     }
      
+      @media (max-width: 480px) { 
+        .copy {
+          padding: 2.5% 10%;
+        }
+        .linediv-l {
+          border-bottom: 1px white solid;
+        }
+        .linediv-r {
+          border-top: 1px white solid;
+        }
+      }
+
      body{
       fond-family: 'Open Sans', Helvetica, Arial, sans-serif;
      }
@@ -40,6 +55,40 @@
       font-size: 18px;
       line-height: 24px;
      }
+      .pitch {
+        padding: 2.5% 0%;
+      }
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color: white;
+      }
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5% 0%;
+      }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;
+      }
     </style>
   </head>
   <body>
@@ -79,7 +128,6 @@
         <div class="span5 offset1 video">
           <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
-      </div>
 
       <div class="span5 actions">
           <div class="span8 offset2">
@@ -108,8 +156,8 @@
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="bar bar-success" style="width: 0%;"></div>
+              <div class="bar bar-warning" style="width: 100%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
@@ -124,6 +172,67 @@
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>      
         </div>
+      </div>
+        <div class="row-fluid section1">
+          <div class="span5 offset1 asset">
+            <img class="img-polaroid" src="http://placehold.it/480x300">
+          </div>
+          <div class="span5 copy">
+            <p>
+              GAMEPREZ is an exciting new free-to-play web-gaming marketplace. 
+              <br/>
+              <ol>
+                <li><b>Gamers:</b> win cash prizes for high scores in competitive games</li>
+                <li><b>Developers:</b> earn revenue while sharing a game you developed</li>
+                <li><b>Promoters:</b> create targeted promotions for your products with competitions involving real-world cash and prizes</li>
+              </ol>
+              <br/>
+              Regardless of whether you’re a hardcore developer, marketer, or gamer of any skill level, Gameprez is seeking beta testers to make our site better. Our mission is creating a symbiotic community mutually benefitting all of our users! Signup to our new beta feedback system at beta.gameprez.com to receive your personal beta test invitation code via email. 
+              <br/><br/>
+              Cash for highscores - Get paid to play!
+            </p>
+          </div>
+        </div>
+
+      <div class="row-fluid faq">
+          <div class="span10 offset1">
+            <h3>FAQ</h3>
+            <div class="accordion" id="accordion2">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseOne">
+                    As a developer, why should I publish my game here?
+                  </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    We provide revenue sharing, free gameserver, a secure score-tracking API, and access to our entire community of Gamers and Promoters.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseTwo">
+                    As a promoter, why should I publish my ad here?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    We provide targeted advertising combining interstitial video with cash, gifts, and other rewards, as well as connecting you directly with game developers to provide fully-integrated user experiences.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p>© 2013 GAMEPREZ</p>
+        </div>
+      </div>
 
     </div>
   </body>
